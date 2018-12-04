@@ -8,7 +8,7 @@ from lib.dec import DEC
 from lib.datasets import MNIST
 
 dataset = "mnist"
-repeat = 10
+repeat = 1
 batch_size = 256
 
 for i in range(1, repeat+1):
