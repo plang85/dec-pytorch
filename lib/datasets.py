@@ -5,6 +5,9 @@ import numpy as np
 import torch
 import torch.utils.data as data
 
+def get_int(tensor):
+    return tensor.item()
+
 class MNIST(data.Dataset):
     """`MNIST <http://yann.lecun.com/exdb/mnist/>`_ Dataset.
     Args:
