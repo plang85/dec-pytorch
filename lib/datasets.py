@@ -6,10 +6,7 @@ import torch
 import torch.utils.data as data
 
 def get_int(littlebytes):
-    print(littlebytes)
-    print(int.from_bytes(littlebytes, byteorder='little'))
-    print(int.from_bytes(littlebytes, byteorder='big'))
-    return int.from_bytes(littlebytes, byteorder='little')
+    return int.from_bytes(littlebytes, byteorder='big')
 
 class MNIST(data.Dataset):
     """`MNIST <http://yann.lecun.com/exdb/mnist/>`_ Dataset.
