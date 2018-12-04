@@ -5,8 +5,8 @@ import numpy as np
 import torch
 import torch.utils.data as data
 
-def get_int(tensor):
-    return tensor.item()
+def get_int(littlebytes):
+    return int.from_bytes(littlebytes, byteorder='little')
 
 class MNIST(data.Dataset):
     """`MNIST <http://yann.lecun.com/exdb/mnist/>`_ Dataset.
